@@ -55,7 +55,7 @@ jobs:
           yarn_cache="$(yarn config get cacheFolder)"
           echo "PATH=$yarn_cache" >>"$GITHUB_OUTPUT"
       - name: Cache Yarn dependencies.
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: WarpBuild/cache@b876110518420e0164418130670ce93945e9f425 # v1.4.1
         with:
           path: ${{ steps.yarn-cache.outputs.PATH }}
           key: >
